@@ -1,0 +1,38 @@
+#label{
+    size: 100px;
+    text-align: start;
+}
+
+.col-md{
+    width: 1vh;
+}
+
+
+
+#a{
+  text-align:left;
+}
+
+.caixa{
+        padding: 0;
+        width: 90%;
+        outline: 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1.0px solid#5e4646;
+        box-shadow: none;
+        line-height: 1.5px;
+        transition: 0.3s;
+}
+
+.text2{
+  padding: 15px;
+}
+
+#test1{
+  color: black;
+}
+
+#text2{
+  padding: 15px;
+}
