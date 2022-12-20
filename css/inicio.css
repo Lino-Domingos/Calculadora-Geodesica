@@ -1,0 +1,36 @@
+.inicial{
+    position: relative;
+    padding: auto;
+    margin: auto;
+
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    font-weight: bold;
+   
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: large;  
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large; 
+    color: black; 
+    text-align: start;
+}
+
+.hero {
+    height: auto;
+    width: 100%;
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  
+
