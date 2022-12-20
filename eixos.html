@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/chjhss?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/acha.css">
+    <link rel="stylesheet" href="css/exce.css">
+    <link rel="stylesheet" href="css/eixos.css">
+    <script src="js/eixos.js"></script>
+    
+    <title>Calculadora</title>
+
+  </head>
+  <body>
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+      
+
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="site-logo">
+              <a href="#" class="text-black"><span class="text-primary">Calculadora Geodésica</a>
+            </div>
+
+            <div class="col-12">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li><a href="inicio.html" class="nav-link">Início</a></li>
+                  
+                  <li class="has-children">
+                    <a href="#about-section" class="nav-link">Operações Geodésicas</a>
+                    <ul class="dropdown arrow-top">
+                     
+                      <li class="has-children">
+                        <a href="#">Elipsoide</a>
+                        <ul class="dropdown">
+                          <li><a href="elipsoides.html">Elipsoides de Referência</a></li>
+                          <li><a href="achatamento.html">Achatamento</a></li>
+                          <li><a href="exce.html">Excentricidade</a></li>
+                          <li><a href="eixos.html">Semi-eixos</a></li>
+                          <li><a href="curvatura.html">Raios de Curvatura</a></li>
+                          <li><a href="paralelo.html">Raio de Paralelo</a></li>
+                          <li><a href="latitudes.html">Latitudes</a></li>
+                          
+                        </ul>
+                      </li>
+                      
+                      <li class="has-children">
+                        <a href="#">Plano</a>
+                        <ul class="dropdown">
+                          <li><a href="rumo.html">Conversação de Rumos e Azimutes</a></li>
+                           </ul>
+                      </li>
+
+                      
+                      
+                    </ul>
+                  </li>
+
+                 
+                  <li><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                </ul>
+
+              </nav>
+
+            </div>
+
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+        </div>
+      </header>
+     <!--.........................................Content...........................................................--> 
+    <div class="hero">
+        <div class="container py-5">
+      
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="mb-4">
+                        <h6 class="text2">Semi-eixos</h6>
+                        <hr class="solid">
+                    
+           
+                        <section>
+                          <div class="container">
+                               <div class="tabs">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <nav>
+                                          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                              <a class="nav-item nav-link active" id="tab-maiores" data-toggle="tab" href="#nav-maior" role="tab" aria-controls="tab-maior" aria-selected="true">Semi-eixo maior (a)</a>
+                                              <a class="nav-item nav-link" id="tab-menores" data-toggle="tab" href="#tab-menor" role="tab" aria-controls="tab-menor" aria-selected="false">Semi-eixo menor (b)</a>
+                                             </div>
+                                      </nav>
+
+
+                                      <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-maior" role="tabpanel" aria-labelledby="tab-maiores">
+                                         
+                                          <div class="frames">
+                      
+                                            <div class="form-group">
+                                           <form action="" name="formas" >
+                                              <div class="row">
+                                                <div class="col-md">
+                                                  <label class="col-sm"  id="labels" for="semi-maior"> Semi-eixo menor (b)</label>
+                                                  <input type="number" id="a" class="semi-maior" min="1" max="123456789087" value="6356752.314" placeholder="a"> 
+                                                
+                                                </div>
+                          
+                                                  <div class="col-md">
+                                                    <label class="col-md"id="labels" for="semi-menor"> Achatamento</label>                    
+                                                <input type="text"  id="f1" class="semi-menor" min="1" value="1/298.25" max="123456789087" placeholder="b"> 
+                                                </div>
+                                             </div>
+                                           
+                                             <div class="text-center">
+                                              <input class="btn btn-primary" type="button" id="botoes" value="Calcular">
+                                            
+                                            </div>
+                                             <p id="test">   
+                                             </p>
+
+                                             <p id="test1">   
+                                            </p>
+                                            </form>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                  <div class="tab-pane fade" id="tab-menor" role="tabpanel" aria-labelledby="tab-menores">
+                                         
+                                     <div class="frames">
+                      
+                                      <div class="form-group">
+                                        <form action="" name="formas" >
+                                            <div class="row">
+                                                <div class="col-md">
+                                                  <label class="col-sm"  id="labels" for="semi-maior"> Semi-eixo maior (a)</label>
+                                                  <input type="number" id="b1" class="semi-maior" min="1" max="123456789087" value="6378137.000" placeholder="a"> 
+                                                
+                                                </div>
+                          
+                                                  <div class="col-md">
+                                                    <label class="col-md"id="labels" for="semi-menor"> Achatamento</label>                    
+                                                <input type="text"  id="f2" class="semi-menor" min="1"  value="1/298.25" max="123456789087" placeholder="b"> 
+                                                </div>
+                                             </div>
+
+                                        <div class="text-center">
+                                          <input class="btn btn-primary" type="button" id="botao" value="Calcular">
+                                        
+                                        </div>
+                                         <p id="test2">
+                                             
+                                         </p>
+                                        
+                                      </form>
+                                    </div>
+                                 </div>
+                                        </div>
+                                 </div>
+                              </div>
+                          </div>
+                          </div>
+
+                          </div>
+                      </section>
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+<!--................................NAVBAR...........................................................-->
+   
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    
+ 
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <!-- Left -->
+
+    <!-- Right -->
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase">
+            <i class="fas fa-gem me-3 text-secondary"></i>LS
+          </h6>
+          <p>
+            Esta Aplicação Web dedica-se a Cálculos Geodésicos.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+                <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Links Úteis
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">UEM</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Faculdade de Ciências</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Departamento de Matématica</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contactos</h6>
+                   <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            lino.chitlhango@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            sheltonnovela20@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 258 84 272 5323</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 258 84 839 1942</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: #d3d3d3;">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="#">DMI-CIG</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+ 
+  </body>
+
+
+
+
+</html>
